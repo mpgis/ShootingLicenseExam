@@ -9,5 +9,4 @@ import Foundation
 
 struct ExamModel{
     let questions: [QuestionModel]
-
 }

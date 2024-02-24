@@ -1,5 +1,5 @@
 //
-//  UserAnswerModel.swift
+//  ResultModel.swift
 //  ShootingLicenseExam
 //
 //  Created by Jakub Slusarski on 24/02/2024.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct UserAnswerModel{
-    let question: QuestionModel
-    let answer: String
+struct ResultModel {
     let examNumber: Int
+    let score: Int
+    let userAnswers: [UserAnswerModel]
 }

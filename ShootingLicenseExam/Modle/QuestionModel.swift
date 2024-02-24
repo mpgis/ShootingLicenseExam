@@ -13,7 +13,7 @@ struct QuestionModel {
     let answers: [String: String]
     let correctAnswer: String
     
-    func isCorrecrt(answer: String) -> Bool {
+    func isCorrect(answer: String) -> Bool {
         return answer == correctAnswer
     }
 }

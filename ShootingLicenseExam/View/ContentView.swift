@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var navigationPath = NavigationPath()
-    @State private var counter: Int = 1
+    @AppStorage("numberOfExam") private var counter: Int = 1
     
     @State private var isPressed: Bool = false
     
     var body: some View {
-        NavigationStack(path: $navigationPath){
+        NavigationStack(){
             VStack{
                 Text("Liczba egzaminow")
                 

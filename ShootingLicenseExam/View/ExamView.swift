@@ -48,6 +48,10 @@ struct ExamView: View {
             }
             .padding()
         }
+        .navigationBarBackButtonHidden()
+        .navigationDestination(isPresented: $examViewModel.endOfExam) {
+            ResultView(resultViewModel: ResultViewModel(answers: examViewModel.userAnswers, examsCount: examViewModel.exams.count))
+        }
     }
 }
 

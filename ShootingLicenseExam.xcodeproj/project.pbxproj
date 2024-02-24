@@ -17,6 +17,9 @@
 		3BF46C342B8A11BE00E853C8 /* ExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF46C322B8A11BE00E853C8 /* ExamView.swift */; };
 		3BF46C372B8A11C800E853C8 /* ExamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF46C362B8A11C800E853C8 /* ExamViewModel.swift */; };
 		3BF46C392B8A11F800E853C8 /* data.tsv in Resources */ = {isa = PBXBuildFile; fileRef = 3BF46C382B8A11F800E853C8 /* data.tsv */; };
+		3BF46C3C2B8A1AF000E853C8 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF46C3B2B8A1AF000E853C8 /* ResultView.swift */; };
+		3BF46C3E2B8A1B1900E853C8 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF46C3D2B8A1B1900E853C8 /* ResultViewModel.swift */; };
+		3BF46C402B8A239D00E853C8 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF46C3F2B8A239D00E853C8 /* ResultModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		3BF46C362B8A11C800E853C8 /* ExamViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamViewModel.swift; sourceTree = "<group>"; };
 		3BF46C382B8A11F800E853C8 /* data.tsv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.tsv; sourceTree = "<group>"; };
 		3BF46C3A2B8A12D200E853C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3BF46C3B2B8A1AF000E853C8 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		3BF46C3D2B8A1B1900E853C8 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		3BF46C3F2B8A239D00E853C8 /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 			children = (
 				3BF46C322B8A11BE00E853C8 /* ExamView.swift */,
 				3BBD450F2B89DDAB004A445C /* ContentView.swift */,
+				3BF46C3B2B8A1AF000E853C8 /* ResultView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +106,7 @@
 				3BF46C2C2B8A11A200E853C8 /* ExamModel.swift */,
 				3BF46C2E2B8A11A700E853C8 /* QuestionModel.swift */,
 				3BF46C302B8A11AD00E853C8 /* UserAnswerModel.swift */,
+				3BF46C3F2B8A239D00E853C8 /* ResultModel.swift */,
 			);
 			path = Modle;
 			sourceTree = "<group>";
@@ -107,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				3BF46C362B8A11C800E853C8 /* ExamViewModel.swift */,
+				3BF46C3D2B8A1B1900E853C8 /* ResultViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -183,11 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF46C2D2B8A11A200E853C8 /* ExamModel.swift in Sources */,
+				3BF46C3E2B8A1B1900E853C8 /* ResultViewModel.swift in Sources */,
 				3BBD45102B89DDAB004A445C /* ContentView.swift in Sources */,
 				3BBD450E2B89DDAB004A445C /* ShootingLicenseExamApp.swift in Sources */,
 				3BF46C312B8A11AD00E853C8 /* UserAnswerModel.swift in Sources */,
 				3BF46C2F2B8A11A700E853C8 /* QuestionModel.swift in Sources */,
+				3BF46C3C2B8A1AF000E853C8 /* ResultView.swift in Sources */,
 				3BF46C372B8A11C800E853C8 /* ExamViewModel.swift in Sources */,
+				3BF46C402B8A239D00E853C8 /* ResultModel.swift in Sources */,
 				3BF46C342B8A11BE00E853C8 /* ExamView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

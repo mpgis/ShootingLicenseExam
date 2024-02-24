@@ -31,7 +31,7 @@ class ExamViewModel {
     
     
     func usersChoice(option :String){
-        let userAnswer = UserAnswerModel(questionNumber: question.questionNumber, answer: option, examNumber: currentExam)
+        let userAnswer = UserAnswerModel(question: question, answer: option, examNumber: currentExam)
         userAnswers.append(userAnswer)
         getNextQuestion()
     }
@@ -40,7 +40,7 @@ class ExamViewModel {
         if currentExam < exams.count {
             let exam = exams[currentExam]
             if currentQuestion < exam.questions.count {
-                //question = exam.questions[currentQuestion]
+                question = exam.questions[currentQuestion]
                 currentQuestion += 1
             } else {
                 currentQuestion = 0
@@ -91,9 +91,9 @@ class ExamViewModel {
                     let questionModel = QuestionModel(questionNumber: questionNumber, questionDescription: question, answers: ["A" : answerA, "B" : answerB, "C" : answerC], correctAnswer: correctAnswer)
                     
                     
-                    if questionModel.questionDescription == "Broń palną można posiadać wyłącznie:" {
-                        self.question = questionModel
-                    }
+//                    if questionModel.questionDescription == "Broń palną można posiadać wyłącznie:" {
+//                        self.question = questionModel
+//                    }
                     
                     
                     if questionModel.questionNumber <= 4 {

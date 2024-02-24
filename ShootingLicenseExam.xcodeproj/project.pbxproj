@@ -20,6 +20,7 @@
 		3BF46C3C2B8A1AF000E853C8 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF46C3B2B8A1AF000E853C8 /* ResultView.swift */; };
 		3BF46C3E2B8A1B1900E853C8 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF46C3D2B8A1B1900E853C8 /* ResultViewModel.swift */; };
 		3BF46C402B8A239D00E853C8 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF46C3F2B8A239D00E853C8 /* ResultModel.swift */; };
+		3BF46C462B8A5DFF00E853C8 /* DetailResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF46C452B8A5DFF00E853C8 /* DetailResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		3BF46C3B2B8A1AF000E853C8 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		3BF46C3D2B8A1B1900E853C8 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
 		3BF46C3F2B8A239D00E853C8 /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
+		3BF46C452B8A5DFF00E853C8 /* DetailResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				3BF46C322B8A11BE00E853C8 /* ExamView.swift */,
 				3BBD450F2B89DDAB004A445C /* ContentView.swift */,
 				3BF46C3B2B8A1AF000E853C8 /* ResultView.swift */,
+				3BF46C452B8A5DFF00E853C8 /* DetailResultView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF46C462B8A5DFF00E853C8 /* DetailResultView.swift in Sources */,
 				3BF46C2D2B8A11A200E853C8 /* ExamModel.swift in Sources */,
 				3BF46C3E2B8A1B1900E853C8 /* ResultViewModel.swift in Sources */,
 				3BBD45102B89DDAB004A445C /* ContentView.swift in Sources */,

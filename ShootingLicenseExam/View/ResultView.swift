@@ -9,17 +9,31 @@ import SwiftUI
 
 struct ResultView: View {
     @State var resultViewModel: ResultViewModel
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack{
             List {
                 ForEach(resultViewModel.results, id: \.examNumber){ result in
                     HStack{
-                        Text("Egzamin \(result.examNumber + 1)")
-                        Spacer()
-                        Text("Wynik: \(result.score)/10")
+                        NavigationLink(destination: DetailResultView(userAnswers: result.userAnswers)){
+                            Text("Egzamin \(result.examNumber + 1)")
+                            Spacer()
+                            Text("Wynik: \(result.score)/10")
+                        }
                     }
                 }
+            }
+        }
+        .navigationBarBackButtonHidden()
+        .toolbar{
+            ToolbarItem(placement: .navigationBarLeading){
+                Button(action: {
+                    dismiss()
+                }, label: {
+                    Image(systemName: "chevron.backward")
+                })
+     
             }
         }
     }

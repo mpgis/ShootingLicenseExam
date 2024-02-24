@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct UserAnswerModel{
+struct UserAnswerModel: Identifiable{
+    var id = UUID()
     let question: QuestionModel
     let answer: String
     let examNumber: Int

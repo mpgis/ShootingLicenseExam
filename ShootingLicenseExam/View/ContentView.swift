@@ -13,7 +13,7 @@ struct ContentView: View {
     @State private var isPressed: Bool = false
     
     var body: some View {
-        NavigationStack(){
+        NavigationStack{
             VStack{
                 Text("Liczba egzaminow")
                 
